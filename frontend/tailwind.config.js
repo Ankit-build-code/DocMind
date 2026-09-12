@@ -1,0 +1,27 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          50:  '#f0f4ff',
+          100: '#dce6ff',
+          200: '#beccff',
+          300: '#94a8ff',
+          400: '#6b82fa',
+          500: '#4f6ef7',
+          600: '#3b56e8',
+          700: '#2d43cc',
+          800: '#2438a8',
+          900: '#1e2f84',
+        },
+      },
+    },
+  },
+  plugins: [require('@tailwindcss/typography')],
+};
