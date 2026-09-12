@@ -28,7 +28,7 @@ app = FastAPI(
 # CORS — adjust origins for production
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:3000","https://doc-mind-f6nojnxp6-solo-b89a.vercel.app","https://doc-mind-topaz-psi.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
